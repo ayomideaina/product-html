@@ -1,0 +1,104 @@
+body {
+    padding:0px;
+    margin:0px;
+    background-color:rgb(245, 244, 243)
+}
+.container {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:60px;
+    
+}
+.content {
+    /* width:100%; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 20px;
+    /* padding-left:20px; */
+}
+.content .image {
+    width: 450px;
+    height:400px;
+    border-radius:13px 0px 0px 13px;
+}
+.card {
+    width:300px;
+    height:400px;
+    padding-left: 30px;
+    background-color: white;
+    border-radius:0px 13px 13px 0px;
+}
+.content .perfume {
+    text-transform: uppercase;
+    font-size:18px;
+    font-family:lucida Grand;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    color:grey;
+}
+.card .writeup {
+    font-family: "Caprasimo", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+.card p {
+    line-height:1.5;
+    font-family: 'Cambria', cochin, sans-serif;
+    letter-spacing:0.5px;
+    color:grey;
+    font-size:18px;
+}
+.card .price {
+    display: flex;
+    align-items:center;
+    gap:14px;
+}
+.card .price h2 {
+    font-size:30px;
+    font-weight:700;
+    color:rgb(61, 127, 103);
+    font-family:"fraunces", serif;
+    font-style:normal;
+    margin-top:0px;
+}
+.card .price h3 {
+    font-size:16px;
+    text-decoration: line-through;
+    margin-top: 0px;
+    color: grey;
+    font-family:"fraunces", serif;
+}
+.button a {
+    font-family:"fraunces", serif;
+    font-size:16px;
+    color: white;
+    background-color:rgb(61, 127, 103);
+    text-decoration: none;
+    display: flex;
+    width:80%;
+    padding:4px;
+    justify-content: center;
+    text-align: center;
+    border-radius:8px;
+}
+@media screen and (max-width:600px){
+    .content{
+        flex-direction: column;
+    }  
+    .card {
+        width:430px;
+        height:350px;
+        border-radius:0px 0px 13px 13px ;
+    } 
+    .content .image {
+        width: 450px;
+        height:350px;
+        border-radius:13px 13px 0px 0px;
+    }
+}
+    
+}
