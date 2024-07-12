@@ -19,13 +19,13 @@ body {
     /* padding-left:20px; */
 }
 .content .image {
-    width: 450px;
-    height:400px;
+    width: 500px;
+    height:450px;
     border-radius:13px 0px 0px 13px;
 }
 .card {
-    width:300px;
-    height:400px;
+    width:380px;
+    height:450px;
     padding-left: 30px;
     background-color: white;
     border-radius:0px 13px 13px 0px;
@@ -42,7 +42,7 @@ body {
     font-family: "Caprasimo", serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 1px;
 }
 .card p {
@@ -50,7 +50,7 @@ body {
     font-family: 'Cambria', cochin, sans-serif;
     letter-spacing:0.5px;
     color:grey;
-    font-size:18px;
+    font-size:16px;
 }
 .card .price {
     display: flex;
@@ -58,7 +58,7 @@ body {
     gap:14px;
 }
 .card .price h2 {
-    font-size:30px;
+    font-size:24px;
     font-weight:700;
     color:rgb(61, 127, 103);
     font-family:"fraunces", serif;
@@ -78,12 +78,33 @@ body {
     color: white;
     background-color:rgb(61, 127, 103);
     text-decoration: none;
-    display: flex;
-    width:80%;
-    padding:4px;
+    /* display: flex; */
+    width:90%;
+    padding:10px 25px;
     justify-content: center;
     text-align: center;
     border-radius:8px;
+}
+/* smaller screens */
+@media screen and (max-width:386px){
+    .content{
+        flex-direction: column;
+    }  
+    .card {
+        width:380px;
+        height:300px;
+        border-radius:0px 0px 13px 13px ;
+    } 
+    .content .image {
+        width: 380px;
+        height:300px;
+        border-radius:13px 13px 0px 0px;
+    }
+    .card {
+        width: 350px;
+        height:370px;
+        border-radius:0px 0px 13px 13px;
+    }
 }
 @media screen and (max-width:600px){
     .content{
@@ -95,10 +116,13 @@ body {
         border-radius:0px 0px 13px 13px ;
     } 
     .content .image {
-        width: 450px;
-        height:350px;
+        width: 400px;
+        height:300px;
         border-radius:13px 13px 0px 0px;
     }
-}
-    
+    .card {
+        width: 370px;
+        height:370px;
+        border-radius:0px 0px 13px 13px;
+    }
 }
