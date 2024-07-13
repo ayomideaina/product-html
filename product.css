@@ -97,6 +97,7 @@ body {
     } 
     .content .image {
         width: 380px;
+        padding: 0px 15px;
         height:300px;
         border-radius:13px 13px 0px 0px;
     }
@@ -106,6 +107,7 @@ body {
         border-radius:0px 0px 13px 13px;
     }
 }
+/* for medium screens */
 @media screen and (max-width:600px){
     .content{
         flex-direction: column;
@@ -121,6 +123,7 @@ body {
         border-radius:13px 13px 0px 0px;
     }
     .card {
+        margin: 0px 30px;
         width: 370px;
         height:370px;
         border-radius:0px 0px 13px 13px;
